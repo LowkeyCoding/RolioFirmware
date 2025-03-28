@@ -1,0 +1,34 @@
+/ {
+    behaviors {
+
+        // hold-taps 
+
+        // tap dance
+        tda: tap_dance_a {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp DA_A>, <&kp DA_A_RING>;
+        };
+        tde: tap_dance_e {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp DA_E>, <&kp DA_AE>;
+        };
+        tdo: tap_dance_o {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp DA_O>, <&kp DA_O_SLASH>;
+        };
+
+        // mod-morphs
+        sm: shift_morph {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
+            mods = <(MOD_LSHIFT|MOD_RSHIFT)>;
+        };
+    };
+};
