@@ -1,8 +1,5 @@
 / {
     behaviors {
-
-        // hold-taps 
-
         // tap dance
         tda: tap_dance_a {
             compatible = "zmk,behavior-tap-dance";
@@ -28,7 +25,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <2>;
             bindings = <&kp>, <&kp>;
-            mods = <(MOD_LSHIFT|MOD_RSHIFT)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
 };
