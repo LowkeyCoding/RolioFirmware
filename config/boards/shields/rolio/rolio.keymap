@@ -24,6 +24,7 @@
 #define DA_MA &as DA_A_RING   DA_A
 #define DA_ME &as DA_AE       DA_E 
 #define DA_MO &as DA_O_SLASH  DA_O
+#define DA_2A &as N2 DA_AT
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -44,7 +45,7 @@
             sensor-bindings = <&s_c &inc_dec_kp C_VOL_UP C_VOL_DN>;
             bindings = <
     &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6                              &kp F7    &kp F8    &kp F9      &kp F10     &kp F11 &trans
-    &trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                              &trans    &trans    &kp UP      &trans      &trans  &trans
+    &trans  &kp N1  &DA_2A  &kp N3  &kp N4  &kp N5                              &trans    &trans    &kp UP      &trans      &trans  &trans
     &trans  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0    &trans            &trans  &trans    &kp LEFT  &kp DOWN    &kp RIGHT   &trans  &trans
                     &trans  &trans  &trans  &trans    &trans            &trans  &trans    &trans    &trans  &trans
             >;
