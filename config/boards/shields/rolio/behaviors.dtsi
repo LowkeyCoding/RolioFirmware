@@ -13,7 +13,7 @@
             #binding-cells = <0>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
-            bindings = <&kp DA_A>, <&kp DA_A_RING>;
+            bindings = <&kp DA_A &kp DA_A_RING>;
             display-name = "Mod-Tap";
         };
         tde: mod_tap2 {
@@ -21,7 +21,7 @@
             #binding-cells = <0>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
-            bindings = <&kp DA_E>, <&kp DA_AE>;
+            bindings = <&kp DA_E &kp DA_AE>;
             display-name = "Mod-Tap";
         };
         tdo: mod_tap3 {
@@ -29,7 +29,7 @@
             #binding-cells = <0>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
-            bindings = <&kp DA_O>, <&kp DA_O_SLASH>;
+            bindings = <&kp DA_O &kp DA_O_SLASH>;
             display-name = "Mod-Tap";
         };
 
