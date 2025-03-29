@@ -8,24 +8,29 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-        // tap dance
-        tda: tap_dance_a {
-            compatible = "zmk,behavior-tap-dance";
+        tda: mod_tap1 {
+            compatible = "zmk,behavior-hold-tap";
             #binding-cells = <0>;
+            flavor = "tap-preferred";
             tapping-term-ms = <200>;
             bindings = <&kp DA_A>, <&kp DA_A_RING>;
+            display-name = "Mod-Tap";
         };
-        tde: tap_dance_e {
-            compatible = "zmk,behavior-tap-dance";
+        tde: mod_tap2 {
+            compatible = "zmk,behavior-hold-tap";
             #binding-cells = <0>;
+            flavor = "tap-preferred";
             tapping-term-ms = <200>;
             bindings = <&kp DA_E>, <&kp DA_AE>;
+            display-name = "Mod-Tap";
         };
-        tdo: tap_dance_o {
-            compatible = "zmk,behavior-tap-dance";
+        tde: mod_tap3 {
+            compatible = "zmk,behavior-hold-tap";
             #binding-cells = <0>;
+            flavor = "tap-preferred";
             tapping-term-ms = <200>;
             bindings = <&kp DA_O>, <&kp DA_O_SLASH>;
+            display-name = "Mod-Tap";
         };
 
         // sensors
