@@ -24,7 +24,7 @@
             bindings = <&kp DA_E>, <&kp DA_AE>;
             display-name = "Mod-Tap";
         };
-        tde: mod_tap3 {
+        tdo: mod_tap3 {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <0>;
             flavor = "tap-preferred";
