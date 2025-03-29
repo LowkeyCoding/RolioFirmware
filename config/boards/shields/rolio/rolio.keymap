@@ -21,9 +21,9 @@
 
 #define AS(keycode) &as LS(keycode) keycode // Autoshift Macro
 //                  hold        tap
-#define DA_MA = &as DA_A_RING   DA_A
-#define DA_ME = &as DA_AE       DA_E 
-#define DA_MO = &as DA_O_SLASH  DA_O
+#define DA_MA = as DA_A_RING   DA_A
+#define DA_ME = as DA_AE       DA_E 
+#define DA_MO = as DA_O_SLASH  DA_O
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -32,7 +32,7 @@
             label = "Alpha";
             sensor-bindings = <&s_c &inc_dec_kp C_VOL_UP C_VOL_DN>;
             bindings = <
-    &kp ESCAPE  &kp DA_Q    &kp DA_W    &tde            &kp DA_R     &kp DA_T                                &kp DA_Y  &kp DA_U    &kp DA_I        &tdo        &kp DA_P        &kp BACKSPACE
+    &kp ESCAPE  &kp DA_Q    &kp DA_W    &DA_ME          &kp DA_R     &kp DA_T                                &kp DA_Y  &kp DA_U    &kp DA_I        &DA_MO      &kp DA_P        &kp BACKSPACE
     &kp TAB     &DA_MA      &kp DA_S    &kp DA_D        &kp DA_F     &kp DA_G                                &kp DA_H  &kp DA_J    &kp DA_K        &kp DA_L    &kp DA_SEMI     &kp DA_SQT
     &kp LSHIFT  &kp DA_Z    &kp DA_X    &kp DA_C        &kp DA_V     &kp DA_B     &kp C_MUTE     &kp C_MUTE  &kp DA_N  &kp DA_M    &kp DA_COMMA    &kp DA_DOT  &kp DA_FSLH     &kp RSHIFT
                             &kp LALT    &kp LCTRL       &tog SEL     &tog UPL     &kp SPACE      &kp ENTER   &tog DOL  &tog SEL    &kp RCTRL       &kp DEL
