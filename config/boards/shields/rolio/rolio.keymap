@@ -54,10 +54,10 @@
             label = "Down";
             sensor-bindings = <&s_c &inc_dec_kp C_VOL_UP C_VOL_DN>;
             bindings = <
-    &trans  &trans  &trans   &trans &trans  &trans                       &trans  &trans  &trans   &trans    &trans   &trans
-    &trans  &trans  &trans   &trans &trans  &trans                       &trans  &trans  &trans   &trans    &trans   &trans
-    &trans  &trans  &trans   &trans &trans  &trans   &trans     &trans   &trans  &trans  &trans   &trans    &trans   &trans
-                    &trans   &trans &trans  &trans   &trans     &trans   &trans  &trans  &trans   &trans
+    &trans  &kp DA_ACUTE    &trans          &trans      &trans      &trans                                      &trans      &trans      &trans      &trans      &trans   &trans
+    &trans  &kp DA_EQUAL    &kp DA_MINUS    &kp DA_PLUS &kp DA_LBRC &kp DA_RBRC                                 &kp DA_RBKT &kp DA_RBKT &kp DA_LPAR &kp DA_RPAR &trans   &trans
+    &trans  &kp DA_PIPE     &trans          &trans      &trans      &trans      &trans      &trans      &trans  &trans      &trans      &trans      &trans      &trans
+                            &trans          &trans      &trans      &trans      &trans      &trans      &trans  &trans      &trans      &trans
             >;
         };
 
