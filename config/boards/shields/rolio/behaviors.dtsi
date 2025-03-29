@@ -8,30 +8,6 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-        tda: mod_tap1 {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <0>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            bindings = <&kp DA_A &kp DA_A_RING>;
-            display-name = "Mod-Tap";
-        };
-        tde: mod_tap2 {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <0>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            bindings = <&kp DA_E &kp DA_AE>;
-            display-name = "Mod-Tap";
-        };
-        tdo: mod_tap3 {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <0>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            bindings = <&kp DA_O &kp DA_O_SLASH>;
-            display-name = "Mod-Tap";
-        };
 
         // sensors
         s_c: scroll_ctrl {
