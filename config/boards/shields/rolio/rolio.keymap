@@ -34,10 +34,10 @@
             label = "Alpha";
             sensor-bindings = <&s_c &inc_dec_kp C_VOL_UP C_VOL_DN>;
             bindings = <
-    &kp ESCAPE  &kp DA_Q    &kp DA_W    DK_E            &kp DA_R    &kp DA_T                              &kp DA_Y  &kp DA_U    &kp DA_I        DK_O        &kp DA_P        &kp BACKSPACE
-    &kp TAB     DK_A        &kp DA_S    &kp DA_D        &kp DA_F    &kp DA_G                              &kp DA_H  &kp DA_J    &kp DA_K        &kp DA_L    &kp DA_SEMI     &kp DA_SQT
-    &kp LSHIFT  &kp DA_Z    &kp DA_X    &kp DA_C        &kp DA_V    &kp DA_B   &kp C_MUTE     &kp C_MUTE  &kp DA_N  &kp DA_M    &kp DA_COMMA    &kp DA_DOT  &kp DA_FSLH     &kp RSHIFT
-                            &mo SEL     &kp LALT        &kp LCTRL   &mo UPL    &kp SPACE      &kp ENTER   &mo DOL   &kp RCTRL   &kp RALT        &mo SEL
+    &kp ESCAPE  &kp DA_Q    &kp DA_W    DK_E            &kp DA_R    &kp DA_T                              &kp DA_Y  &kp DA_U    &kp DA_I    DK_O        &kp DA_P    &kp BACKSPACE
+    &kp TAB     DK_A        &kp DA_S    &kp DA_D        &kp DA_F    &kp DA_G                              &kp DA_H  &kp DA_J    &kp DA_K    &kp DA_L    &mcs        &kp mqsq
+    &kp LSHIFT  &kp DA_Z    &kp DA_X    &kp DA_C        &kp DA_V    &kp DA_B   &kp C_MUTE     &kp C_MUTE  &kp DA_N  &kp DA_M    &mltc       &kp mgtd    &msq        &kp RSHIFT
+                            &mo SEL     &kp LALT        &kp LCTRL   &mo UPL    &kp SPACE      &kp ENTER   &mo DOL   &kp RCTRL   &kp RALT    &mo SEL
             >;
         };
 
@@ -56,10 +56,10 @@
             label = "Down";
             sensor-bindings = <&s_c &inc_dec_kp C_VOL_UP C_VOL_DN>;
             bindings = <
-    &trans  &kp DA_ACUTE    &trans          &trans      &trans      &trans                                      &trans      &trans      &trans      &trans      &trans   &trans
-    &trans  &kp DA_EQUAL    &kp DA_MINUS    &kp DA_PLUS &kp DA_LBRC &kp DA_RBRC                                 &kp DA_LBKT &kp DA_RBKT &kp DA_LPAR &kp DA_RPAR &trans   &trans
-    &trans  &kp DA_PIPE     &trans          &trans      &trans      &trans      &trans      &trans      &trans  &trans      &trans      &trans      &trans      &trans
-                            &trans          &trans      &trans      &trans      &trans      &trans      &trans  &trans      &trans      &trans
+    &trans  &trans    &trans    &trans  &trans  &trans                          &trans      &trans      &trans      &trans      &trans   &trans
+    &trans  &trans    &trans    &trans  &trans  &trans                          &trans      &trans      &trans      &trans      &trans   &trans
+    &trans  &trans    &trans    &trans  &trans  &trans  &trans      &trans      &trans      &trans      &trans      &trans      &trans   &trans
+                                &trans  &trans  &trans  &trans      &trans      &trans      &trans      &trans      &trans      &trans
             >;
         };
 

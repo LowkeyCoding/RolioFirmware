@@ -78,6 +78,48 @@
             bindings = <&kp N0>, <&kp DA_RPAR>; 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+        mltc: mod_lt_comma {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DA_COMMA>, <&kp DA_LT>; 
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        }
+        mgtd: mod_gt_comma {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DA_DOT>, <&kp DA_GT>; 
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        }
+        msfb: mod_fb_slash {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DA_FSLH>, <&kp DA_BSLH>; 
+            mods = <(MOD_LALT|MOD_RALT)>;
+        }
+        mqp: mod_question_pipe {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DA_QMARK>, <&kp DA_PIPE>; 
+            mods = <(MOD_LALT|MOD_RALT)>;
+        }
+        msq: mod_slash_question {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&msfb>, <&mqp>; 
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        }
+        mcs: mod_colon_semi {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DA_COLON>, <&kp DA_SEMI>; 
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        }
+        mqsq: mod_qoute_single {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DA_DQT>, <&kp DA_SQT>; 
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        }
 
         // sensors
         s_c: scroll_ctrl {
