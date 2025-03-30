@@ -21,7 +21,7 @@
 // | SW_A1 | SW_B1 | SW_C1 | SW_D1 | SW_E1 | SW_F1 |                   | SW_F1 | SW_E1 | SW_D1 | SW_C1 | SW_B1 | SW_A1 |
 // | SW_A2 | SW_B2 | SW_C2 | SW_D2 | SW_E2 | SW_F2 | RE_1  |   | RE_1  | SW_F2 | SW_E2 | SW_D2 | SW_C2 | SW_B2 | SW_A2 |
 //                 | SW_B4 | SW_B3 | SW_C3 | SW_D3 | SW_E3 |   | SW_E3 | SW_D3 | SW_C3 | SW_B3 | SW_B4 |
-*
+/*
  * Left Hand (Columns 0-5)                     Right Hand (Columns 6-11)
  * ┌───┬───┬───┬───┬───┬───┐               ┌───┬───┬───┬───┬───┬───┐
  * │ 0 │ 1 │ 2 │ 3 │ 4 │ 5 │               │ 6 │ 7 │ 8 │ 9 │10 │11 │ Row 0
