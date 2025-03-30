@@ -25,16 +25,7 @@
 #define DK_A  &alt1 DA_A_RING   DA_A
 #define DK_E  &alt1 DA_AE       DA_E 
 #define DK_O  &alt1 DA_O_SLASH  DA_O
-#define DK_2  &alt1 N2 DA_AT
-#define DK_EQ DA_EQUAL
-#define DK_MI DA_MINUS
-#define DK_PL DA_PLUS
-#define DK_LC DA_LBRC
-#define DK_RC DA_RBRC
-#define DK_LS DA_LBKT
-#define DK_RS DA_RBKT
-#define DK_LP DA_LPAR
-#define DK_RP DA_RPAR
+
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -54,10 +45,10 @@
             label = "Up";
             sensor-bindings = <&s_c &inc_dec_kp C_VOL_UP C_VOL_DN>;
             bindings = <
-    &trans  &m1         &m2         &m3         &m4         &m5                                 &m6     &m7         &m8         &m9         &m0     &trans
-    &trans  &kp DK_EQ   &kp DK_MI   &kp DK_PL   &kp DK_LC   &kp DK_RC                           &DK_LS  &DK_RS      &kp UP      &trans      &trans  &trans
-    &trans  &trans      &trans      &trans      &trans      &trans    &trans            &trans  &trans  &kp LEFT    &kp DOWN    &kp RIGHT   &trans  &trans
-                        &trans      &trans      &trans      &trans    &trans            &trans  &trans  &trans      &trans      &trans
+    &trans  &m1             &m2             &m3         &m4         &m5                                 &m6         &m7         &m8         &m9         &m0     &trans
+    &trans  &kp DA_EQUAL    &kp DA_MINUS    &kp DA_PLUS &kp DA_LBRC &kp DA_RBRC                         &kp DA_LBKT &kp DA_RBKT &kp UP      &trans      &trans  &trans
+    &trans  &trans          &trans          &trans      &trans      &trans    &trans            &trans  &trans      &kp LEFT    &kp DOWN    &kp RIGHT   &trans  &trans
+                            &trans          &trans      &trans      &trans    &trans            &trans  &trans      &trans      &trans      &trans
             >;
         };
 
