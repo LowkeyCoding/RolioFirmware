@@ -13,6 +13,7 @@
 
 #include "keys_da.h"
 #include "behaviors.dtsi"
+#include "combos.dtsi"
 
 #define ALP  0
 #define UPL  1
@@ -21,12 +22,11 @@
 
 #define AS(keycode) &as LS(keycode) keycode // Autoshift Macro
 //                  hold        tap
-#define DK_A  &alt2 DA_A_RING   DA_A
-#define DK_E  &alt2 DA_AE       DA_E 
-#define DK_O  &alt2 DA_O_SLASH  DA_O
-#define DK_2  &alt2 N2 DA_AT
-//                  DEFAULT     MOD     SHIFT
-#define DK_Q  &csmm DA_Q        N1      DA_EXCL
+#define DK_A  &alt1 DA_A_RING   DA_A
+#define DK_E  &alt1 DA_AE       DA_E 
+#define DK_O  &alt1 DA_O_SLASH  DA_O
+#define DK_2  &alt1 N2 DA_AT
+
 
 / {
     keymap {

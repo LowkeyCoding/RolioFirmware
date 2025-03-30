@@ -1,0 +1,15 @@
+/ {
+    combos {
+        compatible = "zmk,combos";
+        crtl_q {
+            timeout-ms = <50>;
+            key-positions = <40 1>;
+            bindings = <&kp N1>;
+        };
+        alt_q {
+            timeout-ms = <50>;
+            key-positions = <39 1>;
+            bindings = <&kp DA_EXCL>;
+        };
+    };
+};
