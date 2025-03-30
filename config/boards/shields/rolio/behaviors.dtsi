@@ -97,7 +97,7 @@
             #binding-cells = <0>;
             bindings = <&kp DA_DOT>, <&kp DA_GT>; 
             mods = <(MOD_LSFT|MOD_RSFT)>;
-        }
+        };
         mbsp: mod_bs_pipe {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
