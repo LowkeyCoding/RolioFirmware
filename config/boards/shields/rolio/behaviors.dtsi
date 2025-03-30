@@ -12,70 +12,70 @@
         m1: mod_1 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp N1>, <&kp EXCL>;  // 1 -> !
+            bindings = <&kp N1>, <&kp DA_EXCL>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         m2: mod_2 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp N2>, <&kp AT>;    // 2 -> @
+            bindings = <&kp N2>, <&kp DA_AT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         m3: mod_3 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp N3>, <&kp HASH>;  // 3 -> #
+            bindings = <&kp N3>, <&kp DA_HASH>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         m4: mod_4 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp N4>, <&kp DLLR>;  // 4 -> $
+            bindings = <&kp N4>, <&kp DA_DLLR>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         m5: mod_5 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp N5>, <&kp PRCNT>; // 5 -> %
+            bindings = <&kp N5>, <&kp DA_PRCNT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         m6: mod_6 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp N6>, <&kp CARET>; // 6 -> ^
+            bindings = <&kp N6>, <&kp DA_CARET>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         m7: mod_7 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp N7>, <&kp AMPS>;  // 7 -> &
+            bindings = <&kp N7>, <&kp DA_AMPS>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         m8: mod_8 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp N8>, <&kp STAR>;  
+            bindings = <&kp N8>, <&kp DA_STAR>;  
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         m9: mod_9 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp N9>, <&kp LPAR>; 
+            bindings = <&kp N9>, <&kp DA_LPAR>; 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
    
         m0: mod_0 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp N0>, <&kp RPAR>; 
+            bindings = <&kp N0>, <&kp DA_RPAR>; 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
