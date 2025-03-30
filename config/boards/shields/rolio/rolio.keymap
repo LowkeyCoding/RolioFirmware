@@ -27,7 +27,7 @@
 #define DK_2  &alt2 N2 DA_AT
 //                  DEFAULT     MOD     SHIFT
 #define DK_Q  &csmm DA_Q        N1      DA_EXCL
-#de
+
 / {
     keymap {
         compatible = "zmk,keymap";
