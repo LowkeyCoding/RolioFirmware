@@ -21,10 +21,13 @@
 
 #define AS(keycode) &as LS(keycode) keycode // Autoshift Macro
 //                  hold        tap
-#define DA_MA &as DA_A_RING   DA_A
-#define DA_ME &as DA_AE       DA_E 
-#define DA_MO &as DA_O_SLASH  DA_O
-#define DA_2A &as N2 DA_AT
+#define DK_A  &alt2 DA_A_RING   DA_A
+#define DK_E  &alt2 DA_AE       DA_E 
+#define DK_O  &alt2 DA_O_SLASH  DA_O
+#define DK_2  &alt2 N2 DA_AT
+//                  DEFAULT     MOD     SHIFT
+#define DK_Q  &csmm DA_Q        N1      DA_EXCL
+#de
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -33,25 +36,25 @@
             label = "Alpha";
             sensor-bindings = <&s_c &inc_dec_kp C_VOL_UP C_VOL_DN>;
             bindings = <
-    &kp ESCAPE  &kp DA_Q    &kp DA_W    DA_ME           &kp DA_R     &kp DA_T                                &kp DA_Y  &kp DA_U    &kp DA_I        DA_MO      &kp DA_P        &kp BACKSPACE
-    &kp TAB     DA_MA       &kp DA_S    &kp DA_D        &kp DA_F     &kp DA_G                                &kp DA_H  &kp DA_J    &kp DA_K        &kp DA_L    &kp DA_SEMI     &kp DA_SQT
-    &kp LSHIFT  &kp DA_Z    &kp DA_X    &kp DA_C        &kp DA_V     &kp DA_B     &kp C_MUTE     &kp C_MUTE  &kp DA_N  &kp DA_M    &kp DA_COMMA    &kp DA_DOT  &kp DA_FSLH     &kp RSHIFT
-                            &kp LALT    &kp LCTRL       &tog SEL     &tog UPL     &kp SPACE      &kp ENTER   &tog DOL  &tog SEL    &kp RCTRL       &kp DEL
+    &kp ESCAPE  DK_Q        &kp DA_W    DK_E            &kp DA_R    &kp DA_T                              &kp DA_Y  &kp DA_U    &kp DA_I        DK_O        &kp DA_P        &kp BACKSPACE
+    &kp TAB     DK_A        &kp DA_S    &kp DA_D        &kp DA_F    &kp DA_G                              &kp DA_H  &kp DA_J    &kp DA_K        &kp DA_L    &kp DA_SEMI     &kp DA_SQT
+    &kp LSHIFT  &kp DA_Z    &kp DA_X    &kp DA_C        &kp DA_V    &kp DA_B   &kp C_MUTE     &kp C_MUTE  &kp DA_N  &kp DA_M    &kp DA_COMMA    &kp DA_DOT  &kp DA_FSLH     &kp RSHIFT
+                            &kp LALT    &kp LCTRL       &mo SEL     &mo UPL    &kp SPACE      &kp ENTER   &mo DOL   &mo SEL     &kp RCTRL       &kp DEL
             >;
         };
 
-        f_keys_layer {
+        numbers_layer {
             label = "Up";
             sensor-bindings = <&s_c &inc_dec_kp C_VOL_UP C_VOL_DN>;
             bindings = <
-    &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6                              &kp F7    &kp F8    &kp F9      &kp F10     &kp F11 &trans
-    &trans  &kp N1  DA_2A  &kp N3  &kp N4  &kp N5                              &trans    &trans    &kp UP      &trans      &trans  &trans
+    &trans  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6                              &kp F7    &kp F8    &kp F9      &kp F10     &kp F11 &trans
+    &trans  &kp N1  DK_2    &kp N3  &kp N4  &kp N5                              &trans    &trans    &kp UP      &trans      &trans  &trans
     &trans  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0    &trans            &trans  &trans    &kp LEFT  &kp DOWN    &kp RIGHT   &trans  &trans
                     &trans  &trans  &trans  &trans    &trans            &trans  &trans    &trans    &trans  &trans
             >;
         };
 
-        numbers_layer {
+        other_layer {
             label = "Down";
             sensor-bindings = <&s_c &inc_dec_kp C_VOL_UP C_VOL_DN>;
             bindings = <
