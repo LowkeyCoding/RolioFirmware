@@ -9,6 +9,76 @@
             bindings = <&kp>, <&kp>;
         };
 
+        m1: mod_1 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N1>, <&kp EXCL>;  // 1 -> !
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        m2: mod_2 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N2>, <&kp AT>;    // 2 -> @
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        m3: mod_3 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N3>, <&kp HASH>;  // 3 -> #
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        m4: mod_4 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N4>, <&kp DLLR>;  // 4 -> $
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        m5: mod_5 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N5>, <&kp PRCNT>; // 5 -> %
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        m6: mod_6 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N6>, <&kp CARET>; // 6 -> ^
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        m7: mod_7 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N7>, <&kp AMPS>;  // 7 -> &
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        m8: mod_8 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N8>, <&kp STAR>;  
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        m9: mod_9 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N9>, <&kp LPAR>; 
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+   
+        m0: mod_0 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N0>, <&kp RPAR>; 
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
         // sensors
         s_c: scroll_ctrl {
             compatible = "zmk,behavior-sensor-rotate";
