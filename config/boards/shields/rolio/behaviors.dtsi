@@ -14,7 +14,7 @@
             tapping_term_ms = <200>;
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
-            bindings = <&tog>, <&mo>;
+            bindings = <&mo>, <&tog>;
         };
 
         m1: mod_1 {
