@@ -8,6 +8,14 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+        laytt: layer_hold_toggle {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping_term_ms = <200>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&tog>, <&mo>;
+        };
 
         m1: mod_1 {
             compatible = "zmk,behavior-mod-morph";
@@ -89,23 +97,17 @@
             #binding-cells = <0>;
             bindings = <&kp DA_DOT>, <&kp DA_GT>; 
             mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        msfb: mod_fb_slash {
+        }
+        mbsp: mod_bs_pipe {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp DA_FSLH>, <&kp DA_BSLH>; 
+            bindings = <&kp DA_BSLH>, <&kp DA_PIPE>; 
             mods = <(MOD_LALT|MOD_RALT)>;
         };
-        mqp: mod_question_pipe {
+        mfsq: mod_slash_question {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp DA_QMARK>, <&kp DA_PIPE>; 
-            mods = <(MOD_LALT|MOD_RALT)>;
-        };
-        msq: mod_slash_question {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&msfb>, <&mqp>; 
+            bindings = <&kp DA_FSLH>, <&kp DA_QMARK>; 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         mcs: mod_colon_semi {

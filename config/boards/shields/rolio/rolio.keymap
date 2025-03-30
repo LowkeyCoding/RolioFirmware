@@ -20,7 +20,7 @@
 #define DOL  2
 #define SEL  3
 
-#define AS(keycode) &as LS(keycode) keycode // Autoshift Macro
+#define LAY(layer) &laytt layer layer
 //                  hold        tap
 #define DK_A  &alt1 DA_A_RING   DA_A
 #define DK_E  &alt1 DA_AE       DA_E 
@@ -36,8 +36,8 @@
             bindings = <
     &kp ESCAPE  &kp DA_Q    &kp DA_W    DK_E            &kp DA_R    &kp DA_T                              &kp DA_Y  &kp DA_U    &kp DA_I    DK_O        &kp DA_P    &kp BACKSPACE
     &kp TAB     DK_A        &kp DA_S    &kp DA_D        &kp DA_F    &kp DA_G                              &kp DA_H  &kp DA_J    &kp DA_K    &kp DA_L    &mcs        &mqsq
-    &kp LSHIFT  &kp DA_Z    &kp DA_X    &kp DA_C        &kp DA_V    &kp DA_B   &kp C_MUTE     &kp C_MUTE  &kp DA_N  &kp DA_M    &mltc       &mgtd       &msq        &kp RSHIFT
-                            &mo SEL     &kp LALT        &kp LCTRL   &mo UPL    &kp SPACE      &kp ENTER   &mo DOL   &kp RCTRL   &kp RALT    &mo SEL
+    &kp LSHIFT  &kp DA_Z    &kp DA_X    &kp DA_C        &kp DA_V    &kp DA_B   &kp C_MUTE     &kp C_MUTE  &kp DA_N  &kp DA_M    &mltc       &mgtd       &mfsq       &kp RSHIFT
+                            LAY(SEL)    &kp LALT        &kp LCTRL   LAY(UPL)   &kp SPACE      &kp ENTER   LAY(DOL)  &kp RCTRL   &kp RALT   LAY(SEL)
             >;
         };
 
@@ -47,7 +47,7 @@
             bindings = <
     &trans  &m1             &m2             &m3         &m4         &m5                                 &m6         &m7         &m8         &m9         &m0     &trans
     &trans  &kp DA_EQUAL    &kp DA_MINUS    &kp DA_PLUS &kp DA_LBRC &kp DA_RBRC                         &kp DA_LBKT &kp DA_RBKT &kp UP      &trans      &trans  &trans
-    &trans  &trans          &trans          &trans      &trans      &trans    &trans            &trans  &trans      &kp LEFT    &kp DOWN    &kp RIGHT   &trans  &trans
+    &trans  &trans          &trans          &trans      &trans      &trans    &trans            &trans  &trans      &kp LEFT    &kp DOWN    &kp RIGHT   &mbsp   &trans
                             &trans          &trans      &trans      &trans    &trans            &trans  &trans      &trans      &trans      &trans
             >;
         };
