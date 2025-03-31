@@ -37,7 +37,7 @@
     &kp ESCAPE  &kp DA_Q    &kp DA_W    DK_E            &kp DA_R    &kp DA_T                              &kp DA_Y  &kp DA_U    &kp DA_I    DK_O        &kp DA_P    &kp BACKSPACE
     &kp TAB     DK_A        &kp DA_S    &kp DA_D        &kp DA_F    &kp DA_G                              &kp DA_H  &kp DA_J    &kp DA_K    &kp DA_L    &mcs        &mqsq
     &kp LSHIFT  &kp DA_Z    &kp DA_X    &kp DA_C        &kp DA_V    &kp DA_B   &kp C_MUTE     &kp C_MUTE  &kp DA_N  &kp DA_M    &mltc       &mgtd       &mfsq       &kp RSHIFT
-                            LAY(SEL)    &kp LALT        &kp LCTRL   LAY(UPL)   &kp SPACE      &kp ENTER   LAY(DOL)  &kp RCTRL   &kp RALT   LAY(SEL)
+                            &setting    &kp LALT        &kp LCTRL   LAY(UPL)   &kp SPACE      &kp ENTER   LAY(DOL)  &kp RCTRL   &kp RALT    &setting
             >;
         };
 
