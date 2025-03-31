@@ -22,7 +22,7 @@
             tapping_term_ms = <500>;
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
-            bindings = <&tog SEL>, <&none>;
+            bindings = <&tog SEL>, <&kp LSHIFT>;
         };
 
         m1: mod_1 {
