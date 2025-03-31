@@ -16,13 +16,13 @@
             flavor = "tap-preferred";
             bindings = <&mo>, <&tog>;
         };
-        setting: setting_hold_toggle {
+        setting: setting_toggle {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <0>;
             tapping_term_ms = <500>;
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
-            bindings = <&tog 3 kp LSHIFT>;
+            bindings = <&tog>, <&kp>;
         };
 
         m1: mod_1 {
