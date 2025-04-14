@@ -109,7 +109,7 @@
         mbsp: mod_bs_pipe {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp DA_BSLH>, <&kp DA_PIPE>; 
+            bindings = <&kp DA_BSLH>, <&kp PIPE>; 
             mods = <(MOD_LALT|MOD_RALT)>;
         };
         mfsq: mod_slash_question {
