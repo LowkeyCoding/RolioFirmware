@@ -26,7 +26,7 @@
 #define DK_A  &alt1 DA_A_RING   DA_A
 #define DK_E  &alt1 DA_AE       DA_E 
 #define DK_O  &alt1 DA_O_SLASH  DA_O
-
+#define N_PIPE  RA(LS(EQUAL))
 / {
     keymap {
         compatible = "zmk,keymap";
