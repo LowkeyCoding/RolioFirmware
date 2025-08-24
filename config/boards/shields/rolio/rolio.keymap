@@ -22,11 +22,6 @@
 
 #define LAY(layer) &laytt layer layer
 #define SET(s)     &setting s LSHIFT
-//                  hold        tap
-#define DK_F8  &alt1 DA_A_RING   F8
-#define DK_F4  &alt1 DA_AE       F4 
-#define DK_O  &alt1 DA_O_SLASH  DA_O
-
 
 #define N_PIPE  RA(LS(EQUAL))
 / {
@@ -59,8 +54,8 @@
             label = "Down";
             sensor-bindings = <&s_c &inc_dec_kp C_VOL_UP C_VOL_DN>;
             bindings = <
-    &kp F1  &kp F2  &kp F3  DK_F4     &kp F5  &kp F6                      &none      &none      &kp UP     &kp DA_O_SLASH   &none   &none
-    &kp F7  DK_F8  &kp F9   &kp F10    &kp F11 &kp F12                     &none      &kp LEFT   &kp DOWN   &kp RIGHT        &none   &none
+    &kp F1  &kp F2  &kp F3  &td2     &kp F5  &kp F6                      &none      &none      &kp UP     &kp DA_O_SLASH   &none   &none
+    &kp F7  &td1  &kp F9   &kp F10    &kp F11 &kp F12                     &none      &kp LEFT   &kp DOWN   &kp RIGHT        &none   &none
     &none   &none   &none    &none      &none   &none   &none       &none   &none      &none      &none      &none            &none   &none
                              &trans     &trans  &to UPL &trans      &trans  &to ALP    &trans     &trans     &trans           &trans
             >; 

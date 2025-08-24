@@ -10,9 +10,15 @@
         };
         td1: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <2>;
+            #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp>, <&kp>;
+            bindings = <&kp F8>, <&kp DA_A_RING>;
+        };
+        td2: tap_dance_2 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp F4>, <&kp DA_AE>;
         };
         laytt: layer_hold_toggle {
             compatible = "zmk,behavior-hold-tap";
