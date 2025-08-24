@@ -59,7 +59,7 @@
             bindings = <
     &kp F1  &kp F2  &kp F3  DK_F4     &kp F5  &kp F6                      &none      &none      &kp UP     &kp DA_O_SLASH   &none   &none
     &kp F7  DK_F8  &kp F9   &kp F10    &kp F11 &kp F12                     &none      &kp LEFT   &kp DOWN   &kp RIGHT        &none   &none
-    &none   &none   &none    &none      &none   &none   &none       &none   &none      &none      &none      &none            &none   &none
+    &trans   &none   &none    &none      &none   &none   &none       &none   &none      &none      &none      &none            &none   &trans
                              &trans     &trans  &to UPL &trans      &trans  &to ALP    &trans     &trans     &trans           &trans
             >; 
         };
