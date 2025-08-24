@@ -23,9 +23,11 @@
 #define LAY(layer) &laytt layer layer
 #define SET(s)     &setting s LSHIFT
 //                  hold        tap
-#define DK_A  &alt1 DA_A_RING   DA_A
-#define DK_E  &alt1 DA_AE       DA_E 
+#define DK_F8  &alt1 DA_A_RING   F8
+#define DK_F4  &alt1 DA_AE       F4 
 #define DK_O  &alt1 DA_O_SLASH  DA_O
+
+
 #define N_PIPE  RA(LS(EQUAL))
 / {
     keymap {
@@ -35,8 +37,8 @@
             label = "Alpha";
             sensor-bindings = <&s_c &inc_dec_kp C_VOL_UP C_VOL_DN>;
             bindings = <
-    &kp ESCAPE  &kp DA_Q    &kp DA_W    &kp DA_E            &kp DA_R    &kp DA_T                              &kp DA_Y  &kp DA_U    &kp DA_I    &kp DA_O        &kp DA_P    &kp BACKSPACE
-    &kp TAB     &kp DA_A        &kp DA_S    &kp DA_D        &kp DA_F    &kp DA_G                              &kp DA_H  &kp DA_J    &kp DA_K    &kp DA_L    &mcs        &mqsq
+    &kp ESCAPE  &kp DA_Q    &kp DA_W    &kp DA_E        &kp DA_R    &kp DA_T                              &kp DA_Y  &kp DA_U    &kp DA_I    &kp DA_O    &kp DA_P    &kp BACKSPACE
+    &kp TAB     &kp DA_A    &kp DA_S    &kp DA_D        &kp DA_F    &kp DA_G                              &kp DA_H  &kp DA_J    &kp DA_K    &kp DA_L    &mcs        &mqsq
     &kp LSHIFT  &kp DA_Z    &kp DA_X    &kp DA_C        &kp DA_V    &kp DA_B   &kp C_MUTE     &kp C_MUTE  &kp DA_N  &kp DA_M    &mltc       &mgtd       &mfsq       &kp RSHIFT
                             SET(SEL)    &kp LALT        &kp LCTRL   LAY(UPL)   &kp SPACE      &kp ENTER   LAY(DOL)  &kp RCTRL   &kp RALT    SET(SEL)
             >;
@@ -57,11 +59,11 @@
             label = "Down";
             sensor-bindings = <&s_c &inc_dec_kp C_VOL_UP C_VOL_DN>;
             bindings = <
-    &kp F1  &kp F2  &kp F3   &kp F4     &kp F5  &kp F6                      &none      &none      &kp UP     &none      &none   &none
-    &kp F7  &kp F8  &kp F9   &kp F10    &kp F11 &kp F12                     &none      &kp LEFT   &kp DOWN   &kp RIGHT  &none   &none
-    &none   &none   &none    &none      &none   &none   &none       &none   &none      &none      &none      &none      &none   &none
-                             &trans     &trans  &to UPL &trans      &trans  &to ALP    &trans     &trans     &trans     &trans
-            >;
+    &kp F1  &kp F2  &kp F3  DK_F4     &kp F5  &kp F6                      &none      &none      &kp UP     &kp DA_O_SLASH   &none   &none
+    &kp F7  DK_F8  &kp F9   &kp F10    &kp F11 &kp F12                     &none      &kp LEFT   &kp DOWN   &kp RIGHT        &none   &none
+    &none   &none   &none    &none      &none   &none   &none       &none   &none      &none      &none      &none            &none   &none
+                             &trans     &trans  &to UPL &trans      &trans  &to ALP    &trans     &trans     &trans           &trans
+            >; 
         };
 
 
