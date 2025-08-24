@@ -12,13 +12,13 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp F8>, <&kp DA_A_RING>;
+            bindings = <&kp F8>, <&mao>;
         };
         td2: tap_dance_2 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp F4>, <&kp DA_AE>;
+            bindings = <&kp F4>, <&mae>;
         };
         laytt: layer_hold_toggle {
             compatible = "zmk,behavior-hold-tap";
@@ -36,7 +36,18 @@
             flavor = "tap-preferred";
             bindings = <&tog>, <&kp>;
         };
-
+        mao: mod_ao {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DA_A_RING>, <&kp LS(DA_A_RING)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        mae: mod_ae {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DA_AE>, <&kp LS(DA_AE)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
         m1: mod_1 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
