@@ -2,13 +2,6 @@
 
     behaviors {
         // Toggle Numbers layer
-        td1: Toggle_Numpad_MacOS {
-            display-name = "MacOS Symbols Tap Dance";
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <300>;
-            bindings = <&mo M_SYMBOLS>, <&tog NUMPAD>;
-        };
         td2: Toggle_Numpad_Windows {
             display-name = "Windows Symbols Tap Dance";
             compatible = "zmk,behavior-tap-dance";
@@ -61,13 +54,6 @@
             flavor = "tap-preferred";
             tapping-term-ms = <2000>;
             bindings = <&btclrmacro>, <&kp>;
-        };
-        // Small volume steps for MacOS
-        mac_vol: Mac_Volume_Scroller {
-            label = "Scroller MacOS Small Volume Steps";
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&kp LS(LA(C_VOL_UP))>, <&kp LS(LA(C_VOL_DN))>;
         };
         // Behave like "mod-tap" without the keyrepeat
         mtos: mtos {
