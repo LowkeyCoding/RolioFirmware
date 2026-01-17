@@ -9,6 +9,15 @@
             tapping-term-ms = <300>;
             bindings = <&mo W_SYMBOLS>, <&tog NUMPAD>;
         };
+        ltt: lt_tog_strict {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_TOGGLE_STRICT";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <300>;
+            quick-tap-ms = <300>;
+            bindings = <&mo>, <&tog>;
+        };
         //Backlight Brightness
         bri_adjust: Brightness_Scroller {
             label = "Scroller Brightness Adjust";
