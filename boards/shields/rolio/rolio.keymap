@@ -43,7 +43,7 @@
        &kp GRAVE      &kp Q            &kp W           &kp E           &kp R           &kp T     /*|                                 |*/  &kp Y          &kp U           &kp I           &kp O           &kp P          &mt LC(BSPC) BSPC
        &kp TAB        &kp A            &kp S           &kp D           &kp F           &kp G     /*├─────────────╮     ╭─────────────┤*/  &kp H          &kp J           &kp K           &kp L           &kp SEMI       &kp SQT
        &kp LSHIFT     &kp Z            &kp X           &kp C           &kp V           &kp B           &kp F16             &kp F17        &kp N          &kp M           &kp COMMA       &kp DOT         &kp FSLH       &scw RSHIFT 0
-/* ╰───────────────┴───────────────┤*/ &mo KB_CONFIG   &kp LALT        &kp LCTRL       NKEYS           &kp ENTER           &kp SPACE      WKEYS          &mt RCTRL K_APP    &kp RALT        &kp DEL   //├───────────────┴───────────────╯
+/* ╰───────────────┴───────────────┤*/ &mo KB_CONFIG   &kp LALT        &kp LCTRL       &tog NUMPAD     &kp ENTER           &kp SPACE      &tog W_SYMBOLS          &mt RCTRL K_APP    &kp RALT        &kp DEL   //├───────────────┴───────────────╯
 //                                 ╰───────────────┴───────────────┴───────────────┴───────────────┴─────────────╯     ╰─────────────┴───────────────┴───────────────┴───────────────┴───────────────╯
             >;
         };
